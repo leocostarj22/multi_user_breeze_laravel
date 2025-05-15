@@ -18,7 +18,7 @@ class Admin
     {
         If (Auth::user()->user_type != 'admin'){
 
-            Return redirect('dashboard');
+            Return redirect('loja.app');
         }
         
         return $next($request);
